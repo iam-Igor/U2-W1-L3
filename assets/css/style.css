@@ -298,8 +298,7 @@ article {
   }
 
   #card-container {
-    margin-left: 70px;
-    justify-content: space-between;
+    margin-right: auto;
     width: 83%;
     display: flex;
     flex-direction: row;
@@ -376,12 +375,16 @@ article {
 
   article {
     display: flex;
-    width: 68%;
+    width: 100%;
     align-items: baseline;
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .aside-article {
     width: 84%;
     font-size: 0.8em;
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
