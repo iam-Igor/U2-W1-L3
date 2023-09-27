@@ -40,15 +40,11 @@ nav button:first-of-type {
   font-weight: bold;
 }
 
-.smallButton {
-  width: 34%;
-  height: 44px;
-}
-
 nav button {
   color: #6d201c;
   font-weight: bold;
-
+  width: 34%;
+  height: 44px;
   border: 0;
   background-color: #ffdf7f;
   border-radius: 60px;
@@ -147,7 +143,114 @@ article {
   margin-bottom: 2em;
 }
 
-@media screen and (min-width: 481px) and (max-width: 785px) {
+@media screen and (min-width: 481px) {
+  #logo {
+    width: 14%;
+    padding-right: 1em;
+  }
+
+  body {
+    margin: 0%;
+  }
+
+  nav {
+    width: 100%;
+    border-radius: 0;
+    background-color: #fef7e2;
+    display: flex;
+    align-items: center;
+    height: 171px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav button:first-of-type {
+    align-items: center;
+    display: flex;
+    width: 25%;
+    margin: 0;
+    height: 91px;
+    font-size: 1.5em;
+    font-weight: bold;
+    order: 3;
+  }
+  nav:nth-child() {
+    order: 1;
+  }
+  nav button {
+    width: 17%;
+    height: 44px;
+  }
+
+  .smallButton1 {
+    order: 1;
+  }
+
+  .smallButton2 {
+    order: 2;
+  }
+
+  .smallButton3 {
+    order: 4;
+  }
+  .smallButton4 {
+    order: 5;
+  }
+
+  nav button {
+    color: #6d201c;
+    font-weight: bold;
+
+    border: 0;
+    background-color: #ffdf7f;
+    border-radius: 60px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  #card-container {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: unset;
+    justify-content: space-around;
+  }
+
+  main h1 {
+    text-align: center;
+    width: 60%;
+    line-height: 1;
+  }
+  .card {
+    width: 43%;
+    margin-bottom: 2em;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 60px 60px 0 0;
+  }
+
+  .specs h2 {
+    width: 130px;
+  }
+
+  article {
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  article > h1 {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (min-width: 769px) {
   body {
     margin: 0;
   }
@@ -266,7 +369,7 @@ article {
   }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 1200px) {
   body {
     margin: 0;
   }
@@ -282,7 +385,7 @@ article {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 714px;
+    height: 814px;
     justify-content: initial;
     border-radius: 0%;
   }
@@ -291,10 +394,7 @@ article {
     margin-left: auto;
     width: 80%;
     display: flex;
-  }
-
-  main h1 {
-    margin-left: 18px;
+    flex-direction: column;
   }
 
   #card-container {
@@ -374,17 +474,18 @@ article {
   }
 
   article {
-    display: flex;
-    width: 100%;
-    align-items: baseline;
-    margin-left: 0;
+    width: 83%;
     margin-right: auto;
   }
 
   .aside-article {
-    width: 84%;
+    width: 83%;
     font-size: 0.8em;
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .aside-article img {
+    width: 20%;
+    margin-bottom: 2em;
   }
 }
